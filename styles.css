@@ -38,6 +38,27 @@ p {
 	font-size: 22px;
 	margin-top: 25px;
 }
+.symbol {
+	font-size: 11px;
+}
+select, input {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	border-radius: 2px;
+	padding-top: 5px;
+	padding-right: 5px;
+	border: 0.5px solid #4a4a4a;
+	text-align: right;
+}
+input[readonly] {
+	color: rgba(255, 255, 255, 0.5);
+}
+input:focus, select:focus {
+	outline: 1px solid rgba(100, 100, 200);
+}
+.ltr {
+	direction: ltr;
+}
 .grey {
 	opacity: 0.5;
 	margin-top: 30px;
@@ -83,7 +104,7 @@ nav > h1 {
 }
 
 
-#loader {
+#loader, .modal {
 	background-color: rgba(255, 255, 255, 0.01);
 	border: 0.1px solid #4a4a4a;
 	color: white;
@@ -95,4 +116,32 @@ nav > h1 {
 	padding: 20px;
 	padding-top: 45px;
 	border-radius: 5px;
+}
+.modal * {
+	text-align: right;
+}
+.modal > h2 {
+	font-size: 25px;
+}
+.modal > p {
+	font-size: 15px;
+}
+.modal > p > select {
+	width: calc(100% - 25px);
+}
+.modal button {
+	margin-top: 20px;
+	width: calc(50% - 7px);
+	text-align: center;
+	border: 0.5px solid #4a4a4a;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.modal button:nth-of-type(2) {
+	margin-right: 10px;
+}
+.modal button:hover {
+	background-color: rgba(255, 255, 255, 0.1);
 }

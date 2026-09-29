@@ -14,11 +14,29 @@
 		</nav>
 
 
-		<div id="loader">
+		<div id="loader" style="display: none;">
 			<h1>نَویس</h1>
 			<p>اردو لفظ نگار برنامہ</p>
 			<small>کمپیوٹر پر اردو لکھائی کا ایک مکمل حل، ہر قسم کا لفظ نگاری کا آلہ اس برنامہ میں موجود ہے۔</small>
 			<small class="grey">شمارہِ تعمیر: ۰.۱ ابتدائی</small>
+		</div>
+
+		<div class="modal">
+			<h2>نیا دستاویز</h2>
+			<p>کاغذ:
+				<select>
+					<option>A4 (سیدھے رخ)</option>
+					<option>A4 (لمبے رخ)</option>
+				</select>
+			</p>
+			<p>
+				حجم:<br>
+				<input type="text" value="210 mm" class="ltr" readonly>
+				<span class="symbol">ض</span>
+				<input type="text" value="297 mm" class="ltr" readonly>
+			</p>
+			<button>تصدیق</button>
+			<button>منسوخ</button>
 		</div>
 
 		<script src="/script.js"></script>
