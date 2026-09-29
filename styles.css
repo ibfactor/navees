@@ -1,0 +1,98 @@
+@font-face {
+	font-family: "Jameel_Noori_Nastaleeq_Regular";
+	src: url("/fonts/Jameel_Noori_Nastaleeq_Regular/regular.ttf");
+}
+@font-face {
+	font-family: "Mehr_Nastaliq_Saraiki";
+	src: url("/fonts/Mehr_Nastaliq_Saraiki/regular.ttf");
+}
+@font-face {
+	font-family: "Gulzar";
+	src: url("/fonts/Gulzar/regular.ttf");
+}
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	line-height: 1.2;
+	font-family: "Gulzar";
+	font-weight: 400;
+	direction: rtl;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 800;
+}
+h2 {
+	font-size: 30px;
+	font-weight: 800;
+}
+small {
+	display: block;
+	font-size: 18px;
+	margin-top: 10px;	
+}
+p {
+	font-size: 22px;
+	margin-top: 25px;
+}
+.grey {
+	opacity: 0.5;
+	margin-top: 30px;
+}
+button {
+	font-size: 15px;
+	color: white;
+	background-color: transparent;
+}
+
+body {
+	background-color: #191919;
+	text-align: right;
+}
+
+nav {
+	color: white;
+	background-color: rgba(0, 0, 0, 0);
+	padding: 5px;
+	padding-right: 15px;
+	padding-left: 15px;
+	user-select: none;
+}
+nav > h1 {
+	font-family: "Jameel_Noori_Nastaleeq_Regular";
+	padding-top: 4px;
+}
+
+#tools {
+	border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+#tools > button {
+	line-height: 1.2;
+	padding-top: 15px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 3px;
+	cursor: pointer;
+	transition: 0.2s all;
+}
+#tools > button:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+#loader {
+	background-color: rgba(255, 255, 255, 0.01);
+	border: 0.1px solid #4a4a4a;
+	color: white;
+	text-align: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	padding-top: 45px;
+	border-radius: 5px;
+}
