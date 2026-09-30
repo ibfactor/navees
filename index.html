@@ -8,37 +8,40 @@
 
 		<nav>
 			<div id="tools">
-				<button>نیا دستاویز</button>
-				<button>دستاویز کھولیں</button>
+				<button id="doc_new">نیا دستاویز</button>
+				<button id="doc_open">دستاویز کھولیں</button>
 			</div>
 		</nav>
 
+		<iframe id="paper" src="/paper.html">
+		</iframe>
 
-		<div id="loader" style="display: none;">
+		<div id="loader" class="active">
 			<h1>نَویس</h1>
 			<p>اردو لفظ نگار برنامہ</p>
 			<small>کمپیوٹر پر اردو لکھائی کا ایک مکمل حل، ہر قسم کا لفظ نگاری کا آلہ اس برنامہ میں موجود ہے۔</small>
 			<small class="grey">شمارہِ تعمیر: ۰.۱ ابتدائی</small>
 		</div>
 
-		<div class="modal">
+		<div class="modal" data-for="doc_new">
 			<h2>نیا دستاویز</h2>
 			<p>کاغذ:
-				<select>
-					<option>A4 (سیدھے رخ)</option>
-					<option>A4 (لمبے رخ)</option>
+				<select id="doc_new_page">
+					<option value="210x297">A4 (سیدھے رخ)</option>
+					<option value="297x210">A4 (لمبے رخ)</option>
 				</select>
 			</p>
 			<p>
 				حجم:<br>
-				<input type="text" value="210 mm" class="ltr" readonly>
+				<input type="text" id="doc_new_page_width" value="210 mm" class="ltr" readonly>
 				<span class="symbol">ض</span>
-				<input type="text" value="297 mm" class="ltr" readonly>
+				<input type="text" id="doc_new_page_height" value="297 mm" class="ltr" readonly>
 			</p>
-			<button>تصدیق</button>
-			<button>منسوخ</button>
+			<button id="doc_new_confirm">تصدیق</button>
+			<button id="doc_new_cancel">منسوخ</button>
 		</div>
 
-		<script src="/script.js"></script>
+		<script src="/ui.js"></script>
+		<script src="/app.js"></script>
 	</body>
 </html>

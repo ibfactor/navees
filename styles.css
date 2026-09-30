@@ -145,3 +145,17 @@ nav > h1 {
 .modal button:hover {
 	background-color: rgba(255, 255, 255, 0.1);
 }
+
+#loader:not(.active), .modal:not(.active) {
+	display: none;
+}
+
+
+#paper {
+	position: fixed;
+	top: 42px;
+	left: 0px;
+	width: 100%;
+	height: calc(100% - 42px);
+	background-color: rgba(255, 255, 255, 0);
+}

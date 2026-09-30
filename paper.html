@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Paper</title>
+		<link rel="stylesheet" href="/paper.css">
+	</head>
+	<body>
+
+		<div id="layout">
+		</div>
+
+		<script>
+			function initP() {
+				document.querySelectorAll("#layout > div").forEach((el) => {
+					el.addEventListener("focus", () => {
+						document.execCommand('defaultParagraphSeparator', false, 'p');
+					});
+				});
+			}
+		</script>
+	</body>
+</html>
